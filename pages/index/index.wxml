@@ -1,0 +1,107 @@
+<!--pages/index/index.wxml-->
+<button bindtap="showPicker_01">单列非联动picker</button>
+<view>选择数据：{{picker_01_data}}</view>
+<view>选择索引：{{picker_01_index}}</view>
+<picker
+	isShowPicker="{{isShow_01}}"
+	bindsure="sureCallBack_01"
+	bindcancle="cancleCallBack_01"
+	scrollType="normal"
+	listData="{{listData_01}}"
+	indicatorStyle="height:47px"
+></picker>
+
+<button bindtap="showPicker_02">单列非联动picker（自定义样式）</button>
+<view>选择数据：{{picker_02_data}}</view>
+<view>选择索引：{{picker_02_index}}</view>
+<picker
+	isShowPicker="{{isShow_02}}"
+	bindsure="sureCallBack_02"
+	bindcancle="cancleCallBack_02"
+	scrollType="normal"
+	listData="{{listData_02}}"
+	indicatorStyle="height:80px"
+	maskStyle=""
+	titleStyle=""
+	sureStyle="color:blue;font-size:16px;"
+	cancelStyle="color:red;font-size:16px;"
+	chooseItemTextStyle="color:green;"
+	pickerHeaderStyle="background:#eee;"
+	titleText="自定义标题"
+	cancelText="cancle"
+	sureText="sure"
+></picker>
+
+<button bindtap="showPicker_03">多列非联动picker</button>
+<view>选择数据：{{picker_03_data}}</view>
+<view>选择索引：{{picker_03_index}}</view>
+<picker
+	isShowPicker="{{isShow_03}}"
+	bindsure="sureCallBack_03"
+	bindcancle="cancleCallBack_03"
+	scrollType="normal"
+	listData="{{listData_03}}"
+></picker>
+
+<button bindtap="showPicker_04">多列非联动picker 返回对象数组</button>
+<view>选择数据：{{picker_04_data}}</view>
+<view>选择索引：{{picker_04_index}}</view>
+<picker
+	isShowPicker="{{isShow_04}}"
+	keyWordsOfShow="str"
+	bindsure="sureCallBack_04"
+	bindcancle="cancleCallBack_04"
+	scrollType="normal"
+	listData="{{listData_04}}"
+></picker>
+
+<button bindtap="showPicker_05">多列非联动picker 设置默认选择</button>
+<view>选择数据：{{picker_05_data}}</view>
+<view>选择索引：{{picker_05_index}}</view>
+<picker
+	isShowPicker="{{isShow_05}}"
+	keyWordsOfShow="str"
+	defaultPickData="{{defaultPickData_05}}"
+	bindsure="sureCallBack_05"
+	bindcancle="cancleCallBack_05"
+	scrollType="normal"
+	listData="{{listData_05}}"
+></picker>
+
+<button bindtap="showPicker_06">多列联动picker</button>
+<view>选择数据：{{picker_06_data}}</view>
+<view>选择索引：{{picker_06_index}}</view>
+<picker
+	isShowPicker="{{isShow_06}}"
+	keyWordsOfShow="name"
+	bindsure="sureCallBack_06"
+	bindcancle="cancleCallBack_06"
+	scrollType="link"
+	listData="{{listData_06}}"
+></picker>
+
+<button bindtap="showPicker_07">多列联动picker  设置默认选择</button>
+<view>选择数据：{{picker_07_data}}</view>
+<view>选择索引：{{picker_07_index}}</view>
+<picker
+	isShowPicker="{{isShow_07}}"
+	keyWordsOfShow="name"
+	defaultPickData="{{defaultPickData_07}}"
+	bindsure="sureCallBack_07"
+	bindcancle="cancleCallBack_07"
+	scrollType="link"
+	listData="{{listData_07}}"
+></picker>
+
+<button bindtap="showPicker_08">省市区三级联动</button>
+<view>选择数据：{{picker_08_data}}</view>
+<view>选择索引：{{picker_08_index}}</view>
+<picker
+	isShowPicker="{{isShow_08}}"
+	keyWordsOfShow="name"
+	defaultPickData="{{defaultPickData_08}}"
+	bindsure="sureCallBack_08"
+	bindcancle="cancleCallBack_08"
+	scrollType="link"
+	listData="{{listData_08}}"
+></picker>
